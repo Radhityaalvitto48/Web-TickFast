@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Logincss.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TickFast Login</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="left-side">
+                <div class="logo">
+                    <img src="logo.png">
+                </div>
+            </div>
+            <div class="logoright">
+                <img src="logo.png">
+            </div>
+            <div class="right-side">
+                <div class="login-form">
+                    <h2>Log in</h2>
+                    <form>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password">
+                        <a href="sign.html" class="forgot-Account">Belum Punya Akun?</a>
+                        <button type="submit" id="button">Log In</button>
+                    </form>
+                    <p class="terms">
+                        Dengan membuat akun kamu menyetujui Syarat & Ketentuan dan Kebijakan privasi kami.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        const btntombol = document.querySelector("#button");
+        const txtuser = document.querySelector("#email");
+        const txtpassword = document.querySelector("#password");
+
+        btntombol.addEventListener("click", function () {
+            // console.log(txtuser.value)
+            if (txtuser.value == "hi" && txtpassword.value == "123") {
+                window.location = "LandingPage.html"
+            }
+            else {
+                alert("Username dan Password anda salah")
+            }
+        })
+    </script>
+
+
+
+    </html>
+
+
+
+</body>
+
+</html>
